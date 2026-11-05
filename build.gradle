@@ -43,6 +43,7 @@ jar {
         rename { "${it}_${project.base.archivesName.get()}" }
     }
 }
+
 sourceSets {
     main {
         java {
@@ -54,4 +55,8 @@ sourceSets {
             include 'fabric.mod.json'
         }
     }
+}
+
+tasks.named('sourcesJar') {
+    enabled = false
 }
