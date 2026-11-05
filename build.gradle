@@ -60,3 +60,7 @@ sourceSets {
 tasks.named('sourcesJar') {
     enabled = false
 }
+
+tasks.named('remapSourcesJar') {
+    enabled = false
+}
