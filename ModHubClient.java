@@ -51,7 +51,7 @@ public class ModHubClient implements ClientModInitializer {
                 "key." + MOD_ID + ".open",
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_M,
-                KeyBinding.Category.MISC));
+                "key.categories.misc"));
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (openKey.wasPressed()) {
