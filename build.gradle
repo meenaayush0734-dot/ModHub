@@ -43,3 +43,15 @@ jar {
         rename { "${it}_${project.base.archivesName.get()}" }
     }
 }
+sourceSets {
+    main {
+        java {
+            srcDirs = ['.']
+            include '**/*.java'
+        }
+        resources {
+            srcDirs = ['.']
+            include 'fabric.mod.json'
+        }
+    }
+}
